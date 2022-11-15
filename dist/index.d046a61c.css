@@ -5,11 +5,11 @@
 :root {
   --color-text: #20221f;
   --color-link: #000;
-  --color-bg: #b9b3af;
+  --color-bg: #f5efe6;
   --color-bg-preview: #131312;
   --color-bg-overlay: #131312;
-  --color-text-preview: #b3ac99;
-  --color-title-preview: #923538;
+  --color-text-preview: #eee5cc;
+  --color-title-preview: #fc373d;
   --page-padding: 1rem 2rem;
   --preview-padding: 0 2rem 1rem;
   font-size: 18px;
@@ -262,6 +262,7 @@ main {
   will-change: transform;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d;
 }
 
 .demo-3 .preview__item .content__item-img-wrap {
@@ -401,6 +402,7 @@ main {
 
 .preview__item-title {
   will-change: transform;
+  text-align: center;
   grid-area: title;
   place-self: center;
   margin: 0;
@@ -411,8 +413,22 @@ main {
   line-height: 1;
 }
 
+.preview__item-title2 {
+  will-change: transform;
+  text-align: center;
+  grid-area: title;
+  place-self: center;
+  margin: 0;
+  padding-top: 1vw;
+  font-family: kudryashev-d-excontrast-sans, sans-serif;
+  font-size: clamp(3rem, 15vw, 10rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
 .preview__item-subtitle {
   color: var(--color-title-preview);
+  text-align: center;
   grid-area: subtitle;
   justify-self: center;
   margin: 0;
@@ -533,6 +549,20 @@ main {
 
   body #cdawrap {
     justify-self: end;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .preview__item-title {
+    font-size: clamp(3rem, 15vw, 10rem);
+  }
+
+  .preview__item-title2 {
+    font-size: clamp(2rem, 10vw, 7rem);
+  }
+
+  .content__item-title {
+    font-size: clamp(1.8rem, 2.8vw, 1.6rem);
   }
 }
 

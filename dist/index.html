@@ -1,28 +1,26 @@
 <!DOCTYPE html>
- 
+
 <html lang="en" class="no-js">
- 
-    <head>
- 
-        <meta charset="UTF-8">
- 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-        <title>Live PACA</title>
- 
-        <meta name="description" content="Some explorations of page transitions using covering elements and CSS clip-paths.">
- 
-        <meta name="keywords" content="page transition, css, javascript, effect, animation">
- 
-        <meta name="author" content="Codrops">
- 
-        <link rel="shortcut icon" href="/favicon.824cf0c5.ico">
- 
-        <link rel="stylesheet" href="https://use.typekit.net/nfn5vax.css">
- 
-        <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
- 
-        <script>document.documentElement.className = "js";
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Live PACA</title>
+
+    <meta name="description" content="Some explorations of page transitions using covering elements and CSS clip-paths.">
+
+    <meta name="keywords" content="page transition, css, javascript, effect, animation">
+
+    <meta name="author" content="Codrops">
+
+    <link rel="shortcut icon" href="/favicon.824cf0c5.ico">
+
+    <link rel="stylesheet" href="https://use.typekit.net/nfn5vax.css">
+
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+
+    <script>document.documentElement.className = "js";
 var supportsCssVars = function() {
     var e, t = document.createElement("style");
     return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
@@ -30,160 +28,208 @@ var supportsCssVars = function() {
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 
 </script>
- 
-    </head>
- 
-    <body class="demo-1 loading">
- 
-        <main>
- 
-            <div class="frame">
- 
-                <div class="frame__title">
- 
-                    <h1 class="frame__title-main">Made by Simon</h1>
- 
-                    <a aria-label="Back to the article" class="frame__title-back" href="https://github.com/Oldault">
- 
-                        <span class="oh__inner">Back to the article</span>
- 
-                        <svg width="16px" height="16px" viewbox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
-                        </svg>
-                    </a>
-                </div>
-                <a class="frame__prev" href="https://unsplash.com/photos/a2scGjpiI5E">My salmon</a>
-            </div>
-            <div class="content">
-                <figure class="content__item">
-                    <h2 class="content__item-title oh"><span class="oh__inner">Antiqua</span></h2>
-                    <div class="content__item-img-wrap">
-                        <div class="content__item-img" style="filter: brightness(70%); background-image: url(&quot;1.a45131b3.jpg&quot;)"></div>
-                    </div>
-                    <figcaption class="content__item-caption">
-                        You could be my unintended
-                        Choice to live my life extended
-                        You could be the one I'll always love
-                    </figcaption>
-                </figure>
-                <figure class="content__item">
-                    <h2 class="content__item-title oh"><span class="oh__inner">castrum</span></h2>
-                    <div class="content__item-img-wrap">
-                        <div class="content__item-img" style="filter: brightness(90%); background-image: url(&quot;2.cccf08ef.jpg&quot;)"></div>
-                    </div>
-                    <figcaption class="content__item-caption">
-                        You could be the one who listens
-                        To my deepest inquisitions
-                        You could be the one I'll always love
-                    </figcaption>
-                </figure>
-                <figure class="content__item">
-                    <h2 class="content__item-title oh"><span class="oh__inner">dives</span></h2>
-                    <div class="content__item-img-wrap">
-                        <div class="content__item-img" style="filter: brightness(80%); background-image: url(&quot;3.3ef41889.jpg&quot;)"></div>
-                    </div>
-                    <figcaption class="content__item-caption">
-                        I'll be there as soon as I can
-                        But I'm busy mending broken
-                        Pieces of the life I had before
-                    </figcaption>
-                </figure>
-                <figure class="content__item">
-                    <h2 class="content__item-title oh"><span class="oh__inner">religio</span></h2>
-                    <div class="content__item-img-wrap">
-                        <div class="content__item-img" style="filter: brightness(70%); background-image: url(&quot;4.0e5501ba.jpg&quot;)"></div>
-                    </div>
-                    <figcaption class="content__item-caption">
-                        First there was the one who challenged
-                        All my dreams and all my balance
-                        She could never be as good as you
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="content__overlay">
-                <div class="overlay__inner"></div>
-            </div>
-            <div class="preview">
-                <div class="preview__item">
-                    <div class="preview__item-img-outer">
-                        <div class="preview__item-img-wrap">
-                            <div class="preview__item-img" style="filter: brightness(50%); background-image: url(&quot;1.a45131b3.jpg&quot;)"></div>
-                        </div>
-                    </div>
-                    <h2 class="preview__item-title oh"><span class="oh__inner">Cimiez</span></h2>
-                    <h3 class="preview__item-subtitle oh"><span class="oh__inner">Ville gallo-romaine</span></h3>
-                    <span class="preview__item-meta oh"><span class="oh__inner">premier siècle</span></span>
-                    <div class="preview__item-box preview__item-box--left">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Setting</span></h3>
-                        <p class="preview__item-box-desc">Un mythe répandu au sein de la population veut que le quartier tienne son nom de la hauteur extraordinaire des arbres qui peuplaient la colline et dont la légende disait que leurs cimes tutoyaient le ciel. Il s'agit en fait d'un processus courant d'étymologie populaire lié à l'analogie cime / Cimiez.</p>
-                    </div>
-                    <div class="preview__item-box preview__item-box--right">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Location</span></h3>
-                        <p class="preview__item-box-desc">Le musée Henri Matisse et le musée national Marc Chagall font partie des musées les plus visités du quartier de Cimiez, proposant à eux seul plus de 1100 œuvres et assurant 150 000 visites annuelles. La visite du musée archéologique de Nice-Cimiez est aussi recommandé.</p>
-                    </div>
-                </div>
-                <div class="preview__item">
-                    <div class="preview__item-img-outer">
-                        <div class="preview__item-img-wrap">
-                            <div class="preview__item-img" style="filter: brightness(60%); background-image: url(&quot;2.cccf08ef.jpg&quot;)"></div>
-                        </div>
-                    </div>
-                    <h2 class="preview__item-title oh"><span class="oh__inner">View</span></h2>
-                    <h3 class="preview__item-subtitle oh"><span class="oh__inner">La Colline du Château</span></h3>
-                    <span class="preview__item-meta oh"><span class="oh__inner">quelques millénaires.</span></span>
-                    <div class="preview__item-box preview__item-box--left">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Setting</span></h3>
-                        <p class="preview__item-box-desc">Ce lieu fut le site choisi par les Grecs phocéens pour établir leur comptoir et fonder ainsi la ville de Nice</p>
-                    </div>
-                    <div class="preview__item-box preview__item-box--right">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Location</span></h3>
-                        <p class="preview__item-box-desc">On trouve encore dans le parc actuel quelques vestiges de l’ancienne fortification.</p>
-                    </div>
-                </div>
-                <div class="preview__item">
-                    <div class="preview__item-img-outer">
-                        <div class="preview__item-img-wrap">
-                            <div class="preview__item-img" style="filter: brightness(50%); background-image: url(&quot;3.3ef41889.jpg&quot;)"></div>
-                        </div>
-                    </div>
-                    <h2 class="preview__item-title oh"><span class="oh__inner">Rose</span></h2>
-                    <h3 class="preview__item-subtitle oh"><span class="oh__inner">Villa Ephrussi de Rothschild</span></h3>
-                    <span class="preview__item-meta oh"><span class="oh__inner">1912</span></span>
-                    <div class="preview__item-box preview__item-box--left">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Setting</span></h3>
-                        <p class="preview__item-box-desc">The chair she sat in, like a burnished throne, glowed on the marble, where the glass.</p>
-                    </div>
-                    <div class="preview__item-box preview__item-box--right">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Location</span></h3>
-                        <p class="preview__item-box-desc">Doubled the flames of sevenbranched candelabra reflecting light upon the table as the glitter of her jewels rose to meet it.</p>
-                    </div>
-                </div>
-                <div class="preview__item">
-                    <div class="preview__item-img-outer">
-                        <div class="preview__item-img-wrap">
-                            <div class="preview__item-img" style="filter: brightness(50%); background-image: url(&quot;wbkrLa&quot;)"></div>
-                        </div>
-                    </div>
-                    <h2 class="preview__item-title oh"><span class="oh__inner">Lily</span></h2>
-                    <h3 class="preview__item-subtitle oh"><span class="oh__inner">Outsider</span></h3>
-                    <span class="preview__item-meta oh"><span class="oh__inner">2021</span></span>
-                    <div class="preview__item-box preview__item-box--left">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Setting</span></h3>
-                        <p class="preview__item-box-desc">From satin cases poured in rich profusion; in vials of ivory and coloured glass.</p>
-                    </div>
-                    <div class="preview__item-box preview__item-box--right">
-                        <h3 class="preview__item-box-title oh"><span class="oh__inner">Location</span></h3>
-                        <p class="preview__item-box-desc">Huge sea-wood fed with copper burned green and orange, framed by the coloured stone, in which sad light a carvéd dolphin swam.</p>
-                    </div>
-                </div>
-                <button class="unbutton preview__back" aria-label="Back to content">
-                    <svg width="200px" height="36px" viewbox="0 0 50 9">
-                        <path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path>
-                    </svg>
-                </button>
-            </div>
-        </main>
-        <script src="/index.739bf03c.js" defer=""></script>
-    </body>
-</html>
- 
+  </head>
 
+  <body class="demo-1 loading">
+    <main>
+      <div class="frame">
+        <div class="frame__title">
+          <h1 class="frame__title-main">デヤン、ラファエル、サイモンによって作られた</h1>
+
+          <a aria-label="Back to the article" class="frame__title-back" href="https://github.com/Oldault">
+            <span class="oh__inner">Back to the article</span>
+
+            <svg width="16px" height="16px" viewbox="0 0 24 24">
+              <path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <figure class="content__item">
+          <h2 class="content__item-title oh">
+            <span class="oh__inner">ネぐレスコ</span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="filter: brightness(70%); background-image: url(&quot;negresco.561e1a94.jpg&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption">
+            ニースで最も有名なホテル。
+          </figcaption>
+        </figure>
+        <figure class="content__item">
+          <h2 class="content__item-title oh">
+            <span class="oh__inner">シャトー</span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="filter: brightness(90%); background-image: url(&quot;chateau.fbcd197c.jpg&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption">
+            ニースの姿は必見。
+          </figcaption>
+        </figure>
+        <figure class="content__item">
+          <h2 class="content__item-title oh">
+            <span class="oh__inner">ロスチャイルドの家</span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="filter: brightness(80%); background-image: url(&quot;3.3ef41889.jpg&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption">
+            フランスのブルジョワジーがどのように生きていたか
+          </figcaption>
+        </figure>
+        <figure class="content__item">
+          <h2 class="content__item-title oh">
+            <span class="oh__inner">ニースロシア教会</span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="filter: brightness(70%); background-image: url(&quot;4.0e5501ba.jpg&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption">
+            多文化都市
+          </figcaption>
+        </figure>
+      </div>
+      <div class="content__overlay">
+        <div class="overlay__inner"></div>
+      </div>
+      <div class="preview">
+        <div class="preview__item">
+          <div class="preview__item-img-outer">
+            <div class="preview__item-img-wrap">
+              <div class="preview__item-img" style="filter: brightness(40%); background-image: url(&quot;negresco2.e9b62c47.jpg&quot;)"></div>
+            </div>
+          </div>
+          <h2 class="preview__item-title oh">
+            <span class="oh__inner">ネぐレスコ</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Le Negresco</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">1913</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              綺麗で、豪華なホテルです。<br>
+              ミシュランスターレストランがあります。
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              ホテルの所有者は猫に遺産を<br>あげたかったのです。<br>
+              ビル・ゲイツはそのホテルを<br>買いたかったのです。
+            </p>
+          </div>
+        </div>
+        <div class="preview__item">
+          <div class="preview__item-img-outer">
+            <div class="preview__item-img-wrap">
+              <div class="preview__item-img" style="filter: brightness(40%); background-image: url(&quot;chateau3.4a7d1a07.jpg&quot;)"></div>
+            </div>
+          </div>
+          <h2 class="preview__item-title oh">
+            <span class="oh__inner">シャトー</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">La Colline du Château</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">数千年です。</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              ニースの海と町が見えます。<br>とても綺麗です。<br>
+              ルイ14世は二のニースの<br>お城をはかいしました。
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              その場所は自然に満ちている。<br>
+              ピクニックをすることができる。<br>
+              綺麗な滝があります。<br>
+            </p>
+          </div>
+        </div>
+        <div class="preview__item">
+          <div class="preview__item-img-outer">
+            <div class="preview__item-img-wrap">
+              <div class="preview__item-img" style="filter: brightness(40%); background-image: url(&quot;villa.bb4a130f.jpg&quot;)"></div>
+            </div>
+          </div>
+          <h2 class="preview__item-title2 oh">
+            <span class="oh__inner">ロスチャイルドの家</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Villa Ephrussi de Rothschild</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">1912</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              大きくて豪華な家です。<br>
+              庭は大きく、日本庭園もあります。<br>
+              今はコレクターな美術館になりました。<br>
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              ロスチャイルドの芸術コレクションを<br>見ることができます。<br>
+              行ってみてください。<br>
+            </p>
+          </div>
+        </div>
+        <div class="preview__item">
+          <div class="preview__item-img-outer">
+            <div class="preview__item-img-wrap">
+              <div class="preview__item-img" style="filter: brightness(40%); background-image: url(&quot;4.0e5501ba.jpg&quot;)"></div>
+            </div>
+          </div>
+          <h2 class="preview__item-title2 oh">
+            <span class="oh__inner">ニースロシア教会</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Cathédrale Saint-Nicolas de Nice</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">1912</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              西ヨーロッパで一番大きい<br>ロシアの教会です。
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              ロシアの皇帝はニースにバカンスに<br>来ましたからこの教会を<br>つくりました。<br>
+            </p>
+          </div>
+        </div>
+        <button class="unbutton preview__back" aria-label="Back to content">
+          <svg width="200px" height="36px" viewbox="0 0 50 9">
+            <path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path>
+          </svg>
+        </button>
+      </div>
+    </main>
+    <script src="/index.739bf03c.js" defer=""></script>
+  </body>
+</html>
